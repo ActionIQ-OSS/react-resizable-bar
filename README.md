@@ -6,7 +6,7 @@ A simple resizable React component
 
 ## Demo & Examples
 
-Live demo: [.github.io/react-resizable](http://.github.io/react-resizable/)
+Live demo: Coming soon
 
 To build the examples locally, run:
 
