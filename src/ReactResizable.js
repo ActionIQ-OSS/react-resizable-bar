@@ -17,18 +17,23 @@
  * new percent to be.  It is up to the containing widget to pass
  * that percent back into the resizable to update the view.
  */
-var Resizable = (function() {
+
+var React = require('react')
+var $     = require('jquery')
+var _     = require('underscore')
+
+var ReactResizable = (function() {
   "use strict";
 
   var _styles = {
 
-    container: function(width) { return {
+    container: width => ({
       width:    width+"%",
       position: "relative",
       height:   "100%",
-    }},
+    }),
 
-    overlay: function(activelyResizing) { return {
+    overlay: activelyResizing => ({
       width:    "100%",
       height:   "100%",
       position: "fixed",
@@ -36,9 +41,9 @@ var Resizable = (function() {
       left:     0,
       cursor:   "col-resize",
       display:  activelyResizing ? "inline-block" : "none",
-    }},
+    }),
 
-    handle: function(enabled) { return {
+    handle: enabled => ({
       height:     "100%",
       width:      "20px",
       position:   "absolute",
@@ -46,7 +51,7 @@ var Resizable = (function() {
       top:        "0",
       right:      "0",
       cursor:     enabled ? "col-resize" : "auto",
-    }},
+    }),
 
     div: {
       width: "100%"
@@ -164,3 +169,4 @@ var Resizable = (function() {
   });
 })();
 
+export default ReactResizable;

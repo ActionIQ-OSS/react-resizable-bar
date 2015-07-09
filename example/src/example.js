@@ -1,14 +1,21 @@
+var React = require('react');
+var Resizable = require('react-resizable');
+
 var Demo = (function() {
   "use strict";
 
+  var datastore = {
+    percent: 40
+  };
+
   var _styles = {
-    resizable: function(background) { return {
+    resizable: background => ({
       background: background,
       color:      "black",
       textAlign:  "center",
       fontSize:   "12px",
       padding:    "10px",
-    }},
+    }),
 
     resizableHandle: {
       background: "black",
@@ -23,13 +30,9 @@ var Demo = (function() {
   return React.createClass({
     displayName: "Demo",
 
-    propTypes: {
-      data: React.PropTypes.object.isRequired,
-    },
-
     resizableChange: function(val) {
       // hack together a dispatcher and global datastore for the demo
-      this.props.data.percent = Math.floor(val);
+      datastore.percent = Math.floor(val);
       this.forceUpdate();
     },
 
@@ -61,7 +64,7 @@ var Demo = (function() {
     },
 
     render: function() {
-      var percent = this.props.data.percent;
+      var percent = datastore.percent;
       var text = this.getText(percent);
       var background = this.getHSLColor(percent);
       var handleRender = (
@@ -81,3 +84,5 @@ var Demo = (function() {
     }
   });
 })();
+
+React.render(<Demo />, document.getElementById('app'));

@@ -1,0 +1,29 @@
+{
+  "name": "react-resizable",
+  "version": "0.0.0",
+  "description": "react-resizable",
+  "main": "dist/react-resizable.min.js",
+  "homepage": "https://github.com//react-resizable",
+  "authors": [
+    ""
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
