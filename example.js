@@ -2,7 +2,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 'use strict';
 
 var React = require('react');
-var Resizable = require('react-resizable');
+var ResizableBar = require('react-resizable-bar');
 
 var Demo = (function () {
   'use strict';
@@ -77,7 +77,7 @@ var Demo = (function () {
         'div',
         null,
         React.createElement(
-          Resizable,
+          ResizableBar,
           { onChange: this.resizableChange,
             percent: percent,
             maxPercent: 100,
@@ -96,4 +96,4 @@ var Demo = (function () {
 
 React.render(React.createElement(Demo, null), document.getElementById('app'));
 
-},{"react":undefined,"react-resizable":undefined}]},{},[1]);
+},{"react":undefined,"react-resizable-bar":undefined}]},{},[1]);

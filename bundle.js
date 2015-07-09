@@ -10760,9 +10760,9 @@ return jQuery;
   }
 }.call(this));
 
-},{}],"react-resizable":[function(require,module,exports){
+},{}],"react-resizable-bar":[function(require,module,exports){
 /**
- * Resizable div widget
+ * Resizable Bar widget
  *
  * Takes in a percent and displays a div that is that percent of its parent.
  * Allows the user to resize the the div by dragging on the right side.
@@ -10790,7 +10790,7 @@ var React = require('react');
 var $ = require('jquery');
 var _ = require('underscore');
 
-var ReactResizable = (function () {
+var ReactResizableBar = (function () {
   'use strict';
 
   var _styles = {
@@ -10833,7 +10833,7 @@ var ReactResizable = (function () {
   };
 
   return React.createClass({
-    displayName: 'Resizable',
+    displayName: 'ResizableBar',
 
     propTypes: {
       onChange: React.PropTypes.func,
@@ -10947,7 +10947,7 @@ var ReactResizable = (function () {
   });
 })();
 
-exports['default'] = ReactResizable;
+exports['default'] = ReactResizableBar;
 module.exports = exports['default'];
 
 },{"jquery":1,"react":undefined,"underscore":2}]},{},[]);
