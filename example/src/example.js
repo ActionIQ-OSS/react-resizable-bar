@@ -1,5 +1,5 @@
 var React = require('react');
-var Resizable = require('react-resizable');
+var ResizableBar = require('react-resizable-bar');
 
 var Demo = (function() {
   "use strict";
@@ -72,13 +72,13 @@ var Demo = (function() {
       );
       return (
         <div>
-          <Resizable onChange={this.resizableChange}
+          <ResizableBar onChange={this.resizableChange}
                      percent={percent}
                      maxPercent={100}
                      minPercent={10}
                      handleChild={handleRender}>
             <div style={_styles.resizable(background)}>{text}</div>
-          </Resizable>
+          </ResizableBar>
         </div>
       );
     }

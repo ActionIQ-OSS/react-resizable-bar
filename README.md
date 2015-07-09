@@ -1,12 +1,12 @@
-# react-resizable
+# react-resizable-bar
 
 ![demo](screenshots/slider.gif)
 
-A simple resizable React component
+A simple resizable bar React component
 
 ## Demo & Examples
 
-Live demo: [http://www.actioniq.co/react-resizable/](http://www.actioniq.co/react-resizable/)
+Live demo: [http://www.actioniq.co/react-resizable-bar/](http://www.actioniq.co/react-resizable-bar/)
 
 To build the examples locally, run:
 
@@ -20,12 +20,12 @@ Then open [`localhost:8000`](http://localhost:8000) in a browser.
 
 ## Installation
 
-The easiest way to use react-resizable is to install it from NPM and include it in your own React build process (using [Browserify](http://browserify.org), [Webpack](http://webpack.github.io/), etc).
+The easiest way to use react-resizable-bar is to install it from NPM and include it in your own React build process (using [Browserify](http://browserify.org), [Webpack](http://webpack.github.io/), etc).
 
-You can also use the standalone build by including `dist/react-resizable.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
+You can also use the standalone build by including `dist/react-resizable-bar.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
 
 ```
-npm install react-resizable --save
+npm install react-resizable-bar --save
 ```
 
 ## Development (`src`, `lib` and the build process)

@@ -1,9 +1,9 @@
 {
-  "name": "react-resizable",
+  "name": "react-resizable-bar",
   "version": "0.0.1",
-  "description": "react-resizable",
-  "main": "dist/react-resizable.min.js",
-  "homepage": "https://github.com//react-resizable",
+  "description": "react-resizable-bar",
+  "main": "dist/react-resizable-bar.min.js",
+  "homepage": "https://github.com/ActionIQ/react-resizable-bar",
   "authors": [
     "actioniq"
   ],

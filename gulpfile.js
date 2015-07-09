@@ -13,7 +13,7 @@ var initGulpTasks = require('react-component-gulp-tasks');
 var taskConfig = {
 
 	component: {
-		name: 'ReactResizable',
+		name: 'ReactResizableBar',
 		dependencies: [
 			'classnames',
 			'react',

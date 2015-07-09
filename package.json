@@ -1,16 +1,16 @@
 {
-  "name": "react-resizable",
+  "name": "react-resizable-bar",
   "version": "0.0.1",
-  "description": "react-resizable",
+  "description": "react-resizable-bar",
   "main": "lib/ReactResizable.js",
   "author": "actioniq",
-  "homepage": "https://github.com//react-resizable",
+  "homepage": "https://github.com/ActionIQ/react-resizable-bar",
   "repository": {
     "type": "git",
-    "url": "https://github.com//react-resizable.git"
+    "url": "https://github.com/ActionIQ/react-resizable-bar"
   },
   "bugs": {
-    "url": "https://github.com//react-resizable/issues"
+    "url": "https://github.com/ActionIQ/react-resizable-bar/issues"
   },
   "dependencies": {
     "classnames": "^2.1.2",
