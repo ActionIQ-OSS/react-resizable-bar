@@ -25,6 +25,12 @@ var _     = require('underscore')
 var ReactResizableBar = (function() {
   "use strict";
 
+  /*
+   * We can't actually set the resizable's width to 0%, it will break calculations.
+   * If we ever need to show a 0% resizable, use this value instead.
+   */
+  var _zeroVal = 1;
+
   var _styles = {
 
     container: width => ({
@@ -139,8 +145,8 @@ var ReactResizableBar = (function() {
       if (this.state.activelyResizing) {
         var mouseX = e.clientX || e.touches[0].pageX;
         var left = $(React.findDOMNode(this.refs.theDiv)).offset().left - window.scrollX;
-        var newPct = (mouseX - left) / this.state.divWidth;
-        this.updateValue(newPct * this.state.propPercent);
+        var newPct = (mouseX - left) / (this.state.divWidth || _zeroVal);
+        this.updateValue(newPct * (this.state.propPercent || _zeroVal)) ;
       }
     },
 
@@ -152,7 +158,7 @@ var ReactResizableBar = (function() {
 
     render: function() {
       return (
-        <div style={_styles.container(this.props.percent)}>
+        <div style={_styles.container(this.props.percent || _zeroVal)}>
           <div ref="theDiv" style={_.extend({}, this.props.style, _styles.div)}>
             {this.props.children}
           </div>
